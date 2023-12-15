@@ -32,6 +32,20 @@ To use the HNCard component, follow these simple steps:
 
 ## Example
 
+<hn-card width="400" border shadow rounded>
+  <img
+    slot="image"
+    alt="Placeholder Image"
+    src="https://placehold.co/600x400"
+  />
+
+<b slot="title"> The Title </b>
+
+  <p slot="content">Card content goes here.</p>
+</hn-card>
+
+<script src="../../components/hn-card.js"></script>
+
 ![image](https://github.com/hajdunorbert/hncomps/assets/143267212/4a9bbe9e-ff33-458d-a6a7-4ade5aaa73f0)
 
 ## Customization
