@@ -6,31 +6,45 @@
   <title>Custom Card Library</title>
 
   <style>
-    body{
+    .box {
+      width: 100%;
+      height: 50px;
       display: flex;
-      justify-content: center;
       align-items: center;
-      margin-top: 100px;
+      justify-content: center;
+      color: white;
+      font-size: 24px;
+    }
+
+    hn-col{
+      background-color: blue;
     }
   </style>
 
 </head>
 <body>
 
-  <hn-card width="400" border shadow rounded>
-    <img slot="image" alt="Placeholder Image" src="https://placehold.co/600x400">
+  
 
-    <b slot="title">
-        The Title
-    </b>
+  <hn-row gap="20px" justify-content-evenly>
 
-    <p slot="content">
-        Card content goes here.
-    </p>
-
-  </hn-card>
+      <hn-col size="11">
+          <div class="box">11</div>
+      </hn-col>
+      <hn-col size="1">
+        <div class="box">1</div>
+      </hn-col>
+      <hn-col size="1">
+        <div class="box">1</div>
+      </hn-col>
+      <hn-col size="3">
+        <div class="box">3</div>
+      </hn-col>
+      
+  </hn-row>
 
   <script src="components/hn-card.js"></script>
+  <script src="components/hn-row.js"></script>
 
 </body>
 </html>

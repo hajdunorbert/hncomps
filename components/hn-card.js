@@ -1,4 +1,3 @@
-// components/card.js
 class HNCardElement extends HTMLElement {
     constructor() {
       super();
