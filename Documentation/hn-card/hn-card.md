@@ -32,7 +32,7 @@ To use the HNCard component, follow these simple steps:
 
 ## Example
 
-![image](https://github.com/hajdunorbert/hncomps/assets/143267212/4a9bbe9e-ff33-458d-a6a7-4ade5aaa73f0)
+![image](https://github.com/hajdunorbert/hncomps/assets/143267212/c769dc3e-1131-4ab9-be15-ad894b8f8803)
 
 ## Customization
 
