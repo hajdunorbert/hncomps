@@ -42,7 +42,7 @@ class HNCardElement extends HTMLElement {
         }
 
         ::slotted(img) {
-            max-width: 100%;
+            width: 100%;
             height: auto;
             display: block;
             ${this.hasAttribute('rounded') ? 'border-radius: 5px 5px 0 0' : 'none'}
@@ -53,8 +53,6 @@ class HNCardElement extends HTMLElement {
       this.shadowRoot.appendChild(style);
       this.shadowRoot.appendChild(base);
   
-      // Cache the title element for attribute updates
-      this.titleElement = this.shadowRoot.querySelector('header');
     }
   
     static get observedAttributes() {
