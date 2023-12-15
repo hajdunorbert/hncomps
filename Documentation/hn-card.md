@@ -30,6 +30,9 @@ To use the HNCard component, follow these simple steps:
 </hn-card>
 ```
 
+![image](https://github.com/hajdunorbert/hncomps/assets/143267212/4a9bbe9e-ff33-458d-a6a7-4ade5aaa73f0)
+
+
 ## Customization
 
 The <hn-card> element supports the following attributes for customization:
