@@ -35,7 +35,7 @@ To use the HNRow component, follow these simple steps:
 
 ## Example
 
-![image](https://github.com/hajdunorbert/hncomps/assets/143267212/c769dc3e-1131-4ab9-be15-ad894b8f8803)
+![image](https://github.com/hajdunorbert/hncomps/assets/143267212/8cde5038-b25f-44d1-8fc2-553a0c223b71)
 
 ## Customization
 
