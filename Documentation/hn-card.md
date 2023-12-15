@@ -34,12 +34,12 @@ To use the HNCard component, follow these simple steps:
 
 The <hn-card> element supports the following attributes for customization:
 
-` width``: Set the width of the card.
+`width`: Set the width of the card.
 
-` border`` : Add a border to the card.
+`border` : Add a border to the card.
 
-` shadow `` : Apply a box shadow to the card.
+`shadow` : Apply a box shadow to the card.
 
-`rounded ``: Add rounded corners to the card.
+`rounded`: Add rounded corners to the card.
 
 You can adjust these attributes to fit the visual style and layout requirements of your project.
