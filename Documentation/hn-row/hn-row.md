@@ -41,7 +41,7 @@ To use the HNRow component, follow these simple steps:
 
 The `<hn-row>` element supports the following attributes for customization:
 
-`gap`: Set the width of the card.
+`gap`: Set the diatance between the elements.
 
 `justify-content-center` : Center-align columns within the row.
 
