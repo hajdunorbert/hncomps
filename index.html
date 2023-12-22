@@ -21,7 +21,7 @@
     }
 
     hn-button {
-      width: 50%;
+      width: 100%;
       text-align: center;
     }
   </style>
@@ -29,24 +29,22 @@
 </head>
 <body>
 
+  <hn-card width="400" border shadow rounded>
+    <img
+      slot="image"
+      alt="Placeholder Image"
+      src="https://placehold.co/600x400"
+    />
   
+    <b slot="title"> The Title </b>
+  
+    <p slot="content">Card content goes here.</p>
 
-  <hn-row gap="20px" justify-content-evenly>
+    <hn-button slot="footer" border rounded shadow palette="blue">
+      Click me!
+    </hn-button>
 
-      <hn-col size="11">
-          <div class="box">11</div>
-      </hn-col>
-      <hn-col size="1">
-        <div class="box">1</div>
-      </hn-col>
-      <hn-col size="1">
-        <div class="box">1</div>
-      </hn-col>
-      <hn-col size="3">
-        <div class="box">3</div>
-      </hn-col>
-      
-  </hn-row>
+  </hn-card>
 
   <script src="components/hn-tooltip.js"></script>
   <script src="components/hn-card.js"></script>
