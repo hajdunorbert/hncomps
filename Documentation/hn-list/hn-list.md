@@ -32,13 +32,20 @@ To use the HNList component, follow these steps:
 <!-- Thumbnail View -->
 <hn-list
   view="thumbnail"
-  items='[{"title": "Item 1", "image": "https://placehold.co/600x400"}, {"title": "Item 2", "image": "https://placehold.co/600x400"}, {"title": "Item 3", "image": "https://placehold.co/600x400"}]'
+  items='[
+    {"title": "Item 1", "image": "https://placehold.co/600x400"},
+    {"title": "Item 2", "image": "https://placehold.co/600x400"},
+    {"title": "Item 3", "image": "https://placehold.co/600x400"}
+    ]'
 ></hn-list>
 
 <!-- Table View -->
 <hn-list
   view="table"
-  items='[{"Name": "John", "Age": 30}, {"Name": "Jane", "Age": 25}, {"Name": "Bob", "Age": 40}]'
+  items='[
+    {"Name": "John", "Age": 30},
+    {"Name": "Jane", "Age": 25},
+    {"Name": "Bob", "Age": 40}]'
 ></hn-list>
 
 <!-- Timeline View -->
