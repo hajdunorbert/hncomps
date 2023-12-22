@@ -7,10 +7,15 @@
 
   <style>
 
-    hn-button {
+    hn-list{
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    b{
       width: 100%;
       text-align: center;
-      margin-bottom: 5px;
+      display: flex;
+      justify-content: center;
     }
 
   </style>
@@ -18,14 +23,37 @@
 </head>
 <body>
 
-  <hn-button rounded palette="blue">Blue</hn-button>
-  <hn-button rounded palette="red">Red</hn-button>
-  <hn-button rounded palette="green">Green</hn-button>
-  <hn-button rounded palette="orange">Orange</hn-button>
-  <hn-button rounded palette="purple">Purple</hn-button>
-  <hn-button rounded palette="teal">Teal</hn-button>
-  <hn-button rounded palette="#ff5733">Custom Color</hn-button>
+  <b>List View</b>
+  <!-- List View -->
+  <hn-list view="list" items='["Item 1", "Item 2", "Item 3"]'></hn-list>
 
+  <b>Grid View</b>
+  <!-- Grid View -->
+  <hn-list view="grid" items='["Item 1", "Item 2", "Item 3","Item 1", "Item 2", "Item 3"]'></hn-list>
+
+  <b>Card View</b>
+  <!-- Card View -->
+  <hn-list view="card" items='["Item 1", "Item 2", "Item 3"]'></hn-list>
+
+  <b>Compact View</b>
+  <!-- Compact View -->
+  <hn-list view="compact" items='["Item 1", "Item 2", "Item 3"]'></hn-list>
+
+  <b>Thumbnail View</b>
+  <!-- Thumbnail View -->
+  <hn-list view="thumbnail" items='[{"title": "Item 1", "image": "https://placehold.co/600x400"},
+                                    {"title": "Item 2", "image": "https://placehold.co/600x400"},
+                                    {"title": "Item 3", "image": "https://placehold.co/600x400"}]'></hn-list>
+
+  <b>Table View</b>
+  <!-- Table View -->
+  <hn-list view="table" items='[{"Name": "John", "Age": 30}, {"Name": "Jane", "Age": 25}, {"Name": "Bob", "Age": 40}]'></hn-list>
+
+  <b>Timeline View</b>
+  <!-- Timeline View -->
+  <hn-list view="timeline" items='["Event 1", "Event 2", "Event 3"]'></hn-list>
+
+  <script src="components/hn-list.js"></script>
   <script src="components/hn-card.js"></script>
   <script src="components/hn-row.js"></script>
   <script src="components/hn-button.js"></script>
