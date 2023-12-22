@@ -6,47 +6,26 @@
   <title>Custom Card Library</title>
 
   <style>
-    .box {
-      width: 100%;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 24px;
-    }
-
-    hn-col{
-      background-color: #eeeeee;
-    }
 
     hn-button {
       width: 100%;
       text-align: center;
+      margin-bottom: 5px;
     }
+    
   </style>
 
 </head>
 <body>
 
-  <hn-card width="400" border shadow rounded>
-    <img
-      slot="image"
-      alt="Placeholder Image"
-      src="https://placehold.co/600x400"
-    />
-  
-    <b slot="title"> The Title </b>
-  
-    <p slot="content">Card content goes here.</p>
+  <hn-button palette="blue">Blue</hn-button>
+  <hn-button palette="red">Red</hn-button>
+  <hn-button palette="green">Green</hn-button>
+  <hn-button palette="orange">Orange</hn-button>
+  <hn-button palette="purple">Purple</hn-button>
+  <hn-button palette="teal">Teal</hn-button>
+  <hn-button palette="#ff5733">Custom Color</hn-button>
 
-    <hn-button slot="footer" border rounded shadow palette="blue">
-      Click me!
-    </hn-button>
-
-  </hn-card>
-
-  <script src="components/hn-tooltip.js"></script>
   <script src="components/hn-card.js"></script>
   <script src="components/hn-row.js"></script>
   <script src="components/hn-button.js"></script>
