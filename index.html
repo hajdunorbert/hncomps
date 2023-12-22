@@ -17,34 +17,38 @@
     }
 
     hn-col{
-      background-color: blue;
+      background-color: #eeeeee;
+    }
+
+    hn-button {
+      width: 50%;
+      text-align: center;
     }
   </style>
 
 </head>
 <body>
 
-  
+    <hn-card width="400" shadow rounded>
+      <img
+        slot="image"
+        alt="Placeholder Image"
+        src="https://placehold.co/600x400"
+      />
+    
+      <b slot="title"> The Title </b>
+    
+      <p slot="content">Card content goes here.</p>
 
-  <hn-row gap="20px" justify-content-evenly>
+      <p slot="footer">
+        <hn-button rounded border shadow onclick="alert('asd')">This is a button</hn-button>
+      </p>
+    </hn-card>
 
-      <hn-col size="11">
-          <div class="box">11</div>
-      </hn-col>
-      <hn-col size="1">
-        <div class="box">1</div>
-      </hn-col>
-      <hn-col size="1">
-        <div class="box">1</div>
-      </hn-col>
-      <hn-col size="3">
-        <div class="box">3</div>
-      </hn-col>
-      
-  </hn-row>
-
+  <script src="components/hn-tooltip.js"></script>
   <script src="components/hn-card.js"></script>
   <script src="components/hn-row.js"></script>
+  <script src="components/hn-button.js"></script>
 
 </body>
 </html>
