@@ -28,6 +28,18 @@ Simply add the `hn-palette` attribute to any HTML element to specify the desired
 <li hn-palette="red">Red List Item</li>
 ```
 
+## Hover Effect
+
+You can add a hover effect to elements by including the `hover` attribute along with the `hn-palette` attribute.
+
+```html
+<!-- Apply palette with hover effect to a button -->
+<button hn-palette="orange" hover>Hover Me</button>
+
+<!-- Apply palette with hover effect to a link -->
+<a hn-palette="purple" hover>Hover Link</a>
+```
+
 ### Supported Palettes
 
 The following color palettes are supported out of the box:

@@ -5,27 +5,31 @@ const components = [
     "hn-card",
     "hn-list",
     "hn-row",
+    "hn-nav"
+];
+
+const attributes = [
     "hn-palette"
-]
+];
 
 components.forEach(e => {
-    if(e != "hn-palette"){
-        const comp    = document.querySelectorAll(e);
+    const comp    = document.querySelectorAll(e);
 
-        if(comp.length > 0){
-            loadScript(`${path}${e}.js`, () => {
-                console.log(`${e} was loaded successfully.`);
-            });
-        }
-    }else if(e == "hn-palette"){
-        const comp    = document.querySelectorAll(`[${e}]`);
-        if(comp.length > 0){
-            loadScript(`${path}${e}.js`, () => {
-                console.log(`${e} was loaded successfully.`);
-            });
-        }
+    if(comp.length > 0){
+        loadScript(`${path}${e}.js`, () => {
+            console.log(`${e} was loaded successfully.`);
+        });
     }
     
+});
+
+attributes.forEach(e => {
+    const comp    = document.querySelectorAll(`[${e}]`);
+    if(comp.length > 0){
+        loadScript(`${path}${e}.js`, () => {
+            console.log(`${e} was loaded successfully.`);
+        });
+    }
 });
 
 function loadScript(src, e){

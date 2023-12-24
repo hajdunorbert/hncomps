@@ -4,7 +4,7 @@ elementsWithPalette.forEach(function (element) {
     const paletteColor = element.getAttribute('hn-palette');
 
     // Generate a unique class or ID
-    const uniqueClass = `hn-palette-${hashCode(paletteColor)}`;
+     const uniqueClass = `hn-palette-${Math.random().toString(36).substring(7)}`;
 
     element.classList.add(uniqueClass);
 
@@ -14,11 +14,13 @@ elementsWithPalette.forEach(function (element) {
         document.styleSheets[0].cssRules.length
     );
 
-    // Create a style rule for :hover
-    const hoverStyle = document.styleSheets[0].insertRule(
-        `.${uniqueClass}:hover { ${getHoverStyles(paletteColor)} }`,
-        document.styleSheets[0].cssRules.length
-    );
+    if(element.hasAttribute('hover')){
+        // Create a style rule for :hover
+        const hoverStyle = document.styleSheets[0].insertRule(
+            `.${uniqueClass}:hover { ${getHoverStyles(paletteColor)} }`,
+            document.styleSheets[0].cssRules.length
+        );
+    }
 
 });
 

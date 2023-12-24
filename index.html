@@ -7,6 +7,11 @@
 
   <style>
 
+    body{
+      margin: 0;
+      padding: 0;
+    }
+
     hn-list{
       width: 100%;
       margin-bottom: 50px;
@@ -16,6 +21,7 @@
       text-align: center;
       display: flex;
       justify-content: center;
+      
     }
 
   </style>
@@ -23,17 +29,34 @@
 </head>
 <body>
 
-  <hn-button border rounded shadow hn-palette="#2db391">
-    This is a green hn-button
-  </hn-button>
+  <hn-nav hn-palette="green">
 
-  <hn-button border rounded shadow hn-palette="#186954">
-    This is a dark green hn-button
-  </hn-button>
+    <div class="logo" slot="left">Your Logo</div>
+    <ul class="nav-links" slot="center">
+      <li><a href="#"><hn-button hn-palette="blue" hover rounded>Home</hn-button></li></a>
+      <li><a href="#"><hn-button hn-palette="blue" hover rounded>About</hn-button></li></a>
+      <li><a href="#"><hn-button hn-palette="blue" hover rounded>Services</hn-button></li></a>
+      <li><a href="#"><hn-button hn-palette="blue" hover rounded>Contact</hn-button></li></a>
+    </ul>
 
-  <button hn-palette="blue">This is a blue button</button>
+  <hn-button slot="right" hn-palette="blue" hn-toggle="hn-nav" hover rounded><a href="#">&#9776; Menu</a></hn-button>
 
-  <div hn-palette="blue">This is a div</div>
+  </hn-nav>
+
+  <hn-card width="400" border shadow rounded>
+    <img
+      slot="image"
+      alt="Placeholder Image"
+      src="https://placehold.co/600x400"
+    />
+  
+    <b slot="title"> The Title </b>
+  
+    <p slot="content">Card content goes here.</p>
+
+    <hn-button slot="footer" hn-palette="blue" hover rounded>Contact</hn-button>
+
+  </hn-card>
 
   <script src="components/hn-comps.js"></script>
 
