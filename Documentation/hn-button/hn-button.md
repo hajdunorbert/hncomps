@@ -19,21 +19,14 @@ Include the HNButton JavaScript file in your project:
 To use the HNButton component, follow these simple steps:
 
 ```html
-<hn-button palette="blue">Blue</hn-button>
-<hn-button palette="red">Red</hn-button>
-<hn-button palette="green">Green</hn-button>
-<hn-button palette="orange">Orange</hn-button>
-<hn-button palette="purple">Purple</hn-button>
-<hn-button palette="teal">Teal</hn-button>
-<hn-button palette="#ff5733">Custom Color</hn-button>
+<hn-button border>Button with border</hn-button>
+<hn-button shadow>Button with shadow</hn-button>
+<hn-button rounded>Button with rounded corners</hn-button>
 ```
 
 ## Customization
 
 The `<hn-button>` element supports the following attributes for customization:
-
-`palette`: Set the color palette for the button.
-Available options include `blue`, `red`, `green`, `orange`, `purple`, and `teal`. You can also use `hex` color values for custom colors.
 
 `border`: Add a border to the button.
 
