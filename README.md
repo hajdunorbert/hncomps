@@ -4,8 +4,8 @@ HNComps is a JavaScript-based component library that offers a collection of flex
 
 ## Getting Started
 
-To get started, include a Component in your project:
+To get started, include the `hn-comps.js` in to your project:
 
 ```html
-<script src="path/to/hncomp.js"></script>
+<script src="path/to/hn-comps.js"></script>
 ```
