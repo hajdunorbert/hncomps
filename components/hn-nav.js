@@ -140,6 +140,7 @@ class HNNavElement extends HTMLElement {
                 width: 100%;
                 display: none;
                 padding-top: 10px;
+                padding-bottom: 10px;
             }
 
             .mobile ul li{
