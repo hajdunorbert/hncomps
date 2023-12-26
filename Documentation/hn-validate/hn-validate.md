@@ -11,7 +11,7 @@ Include the `hn-comps.js` JavaScript file in your project. Since the `HNComps` a
 
 The following validation rules are supported:
 
-`required`: Ensures that the input is not empty.<br>
+`required`: Ensures that the input is `not empty`.<br>
 `min:length`: Validates the input against a `minimum length` requirement.<br>
 `max:length`: Validates the input against a `maximum length` requirement.
 
