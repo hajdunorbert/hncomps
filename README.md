@@ -9,3 +9,7 @@ To get started, include the `hn-comps.js` in to your project:
 ```html
 <script src="path/to/hn-comps.js"></script>
 ```
+
+## Example
+
+https://hajdunorbert.github.io/hncomps/
