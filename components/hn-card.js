@@ -13,7 +13,7 @@ class HNCardElement extends HTMLElement {
         <div class="body">
             <slot class="title" name="title"></slot>
             <slot name="content"></slot>
-            <slot name="footer"></slot>
+            <slot class="footer" name="footer"></slot>
         </div>
       `;
   
@@ -24,7 +24,6 @@ class HNCardElement extends HTMLElement {
             --card-width: 200px;
             display: inline-block;
             width: var(--card-width);
-            max-width: 100%;
         }
 
         .body {
@@ -34,6 +33,10 @@ class HNCardElement extends HTMLElement {
         .title {
             font-size: 1.2em;
             font-weight: bold;
+        }
+
+        .footer {
+          
         }
 
         ::slotted(img) {

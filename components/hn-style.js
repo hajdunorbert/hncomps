@@ -18,6 +18,11 @@ const HNStyleAttributes = [
         attr: "text-centered",
         className: `hn-style-text-centered`,
         style: "text-align:center;"
+    },
+    {
+        attr: "full-width",
+        className: `hn-style-full-width`,
+        style: "width: 100%;"
     }
 ];
 

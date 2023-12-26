@@ -15,8 +15,10 @@ class HNButtonElement extends HTMLElement {
             :host {
                 display: inline-block;
                 cursor: pointer;
-                padding: 8px 16px;
                 transition: background-color 0.3s ease;
+            }
+            .base {
+                padding: 8px 16px;
             }
         `;
 
