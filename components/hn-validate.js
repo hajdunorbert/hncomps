@@ -98,13 +98,13 @@ function checkForRequiredField(tag){
 }
 
 function checkForMinLength(tag, value){
-    if (tag.value.trim().length < value) {
+    if (tag.value.length < value) {
         throw new Error(`The length must be at least ${value} charaters long!`);
     }
 }
 
 function checkForMaxLength(tag, value){
-    if (tag.value.trim().length > value) {
+    if (tag.value.length > value) {
         throw new Error(`The length can't be more than ${value} charaters long!`);
     }
 }
