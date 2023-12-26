@@ -10,8 +10,8 @@ Include the `hn-comps.js` JavaScript file in your project. Since the `HNComps` a
 
 The following validation rules are supported:
 
-`required`: Ensures that the input is not empty.\n
-`min:length`: Validates the input against a `minimum length` requirement.\n
+`required`: Ensures that the input is not empty.<br>
+`min:length`: Validates the input against a `minimum length` requirement.<br>
 `max:length`: Validates the input against a `maximum length` requirement.
 
 ## Usage
@@ -22,12 +22,14 @@ Before using `HNValidate`, ensure that your form includes a button with the `typ
 
 ```html
 <form name="login">
+  <input
+    placeholder="Username"
+    name="username"
+    hn-validate="required min:8 max:12"
+  />
+  <label for="username"></label>
 
-    <input placeholder="Username" name="username" hn-validate="required min:8 max:12">
-    <label for="username"></label>
-
-    <button type="submit" disabled>Submit</button>
-
+  <button type="submit" disabled>Submit</button>
 </form>
 ```
 
