@@ -41,6 +41,14 @@ const HNStyleAttributes = [
 ];
 ```
 
+## Attributes
+
+`full-width` - Gives an element `100% width`
+`rounded` - Gives an element `Rounded Corners`
+`shadow`  - Gives an element `Shadow`
+`border`  - Gives an element `Border`
+`text-centered` - Makes the `Text Centered`
+
 ## Usage
 
 ### Applying Styles

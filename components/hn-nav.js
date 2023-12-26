@@ -161,6 +161,13 @@ class HNNavElement extends HTMLElement {
                 gap: 10px;
             }
 
+            ::slotted([slot="right"]) {
+                display: none;
+            }
+            ::slotted([slot="center"]) {
+                margin: 0 auto;
+            }
+
             @media screen and (max-width: 768px) {
                 ::slotted([slot="right"]) {
                     display: block;
@@ -185,15 +192,6 @@ class HNNavElement extends HTMLElement {
                     width: 100%;
                 }
 
-            }
-
-            @media screen and (min-width: 769px) {
-                ::slotted([slot="right"]) {
-                    display: none;
-                }
-                ::slotted([slot="center"]) {
-                    margin: 0 auto;
-                }
             }
 
         `;
