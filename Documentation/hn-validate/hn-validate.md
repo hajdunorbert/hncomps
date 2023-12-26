@@ -1,6 +1,7 @@
 # HNValidate Component Documentation
 
-`HNValidate` is a JavaScript Component that provides a simple and customizable way to perform input validation and display error messages in a list format. With `HNValidate`, you can easily enhance the user experience by validating form inputs and presenting clear error messages.
+`HNValidate` is a JavaScript Component that provides a simple and customizable way to perform input validation and display error messages in a list format.<br>
+With `HNValidate`, you can easily enhance the user experience by validating form inputs and presenting clear error messages.
 
 ## Installation
 
@@ -16,7 +17,8 @@ The following validation rules are supported:
 
 ## Usage
 
-Before using `HNValidate`, ensure that your form includes a button with the `type="submit"` attribute. This button will be automatically enabled or disabled based on the validation rules applied to the form inputs.
+Before using `HNValidate`, ensure that your form includes a button with the `type="submit"` attribute.<br>
+This button will be automatically enabled or disabled based on the validation rules applied to the form inputs.
 
 ## Example
 
@@ -33,4 +35,8 @@ Before using `HNValidate`, ensure that your form includes a button with the `typ
 </form>
 ```
 
-In this example, the `hn-validate` attribute is applied to input fields with various validation rules. The error messages will be displayed as a list within the corresponding label. The form submission button will be disabled if there are validation errors. Adjust the rules and styling as needed for your project.
+In this example, the `hn-validate` attribute is applied to input fields with various validation rules.<br>
+The error messages will be displayed as a list within the corresponding label.<br>
+The form submission button will be disabled if there are validation errors.
+
+Adjust the rules and styling as needed for your project.
