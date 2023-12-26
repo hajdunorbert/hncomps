@@ -1,4 +1,4 @@
-# HNStyle Library
+# HNStyle Component Documentation
 
 `HNStyle` is a JavaScript library designed to simplify the process of applying custom styles to HTML elements by defining and using a configuration array.
 
@@ -6,7 +6,7 @@ With `hn-style`, you can easily enhance the appearance of your components by spe
 
 ## Installation
 
-Include `the hn-comps.js` JavaScript file in your project. Since you are dynamically loading the script based on the components used.
+Include the `hn-comps.js` JavaScript file in your project. Since the `HNComps` are dynamically loading the script based on the components used.
 
 ## Configuration
 

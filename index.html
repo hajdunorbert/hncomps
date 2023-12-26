@@ -52,20 +52,14 @@
 
   <main>
 
-    <hn-card border shadow rounded>
-      <img
-        slot="image"
-        alt="Placeholder Image"
-        src="https://placehold.co/1200x1200"
-      />
-    
-      <b slot="title" text-centered> The Title </b>
-    
-      <p slot="content">Card content goes here.</p>
+    <form name="login">
 
-      <hn-button slot="footer" full-width hn-palette="blue" hover rounded>Contact</hn-button>
+      <input placeholder="Username" name="username" hn-validate="required min:8 max:12">
+      <label for="username"></label>
 
-    </hn-card>
+      
+
+    </form>
 
   </main>
 
