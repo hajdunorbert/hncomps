@@ -1,4 +1,4 @@
-class HNButtonElement extends HTMLElement {
+class HNFormElement extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({ mode: 'open' });
@@ -7,16 +7,13 @@ class HNButtonElement extends HTMLElement {
         base.classList.add('base');
 
         base.innerHTML = `
-            ${this.textContent}
+            <slot>${this.textContent}</slot>
         `;
 
         const style = document.createElement('style');
         style.textContent = `
             :host {
                 display: inline-block;
-                cursor: pointer;
-                padding: 8px 16px;
-                transition: background-color 0.3s ease;
             }
         `;
 
@@ -26,4 +23,4 @@ class HNButtonElement extends HTMLElement {
   
 }
 
-customElements.define('hn-button', HNButtonElement);
+customElements.define('hn-form', HNFormElement);

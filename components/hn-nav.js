@@ -90,14 +90,18 @@ class HNNavElement extends HTMLElement {
                 `;
 
                 mobile.innerHTML = `
-                    <slot name="center"></slot>
+                    <slot name="center">
+                    </slot>
                 `;
             } else {
                 // Code to execute for larger screens
                 // Component's HTML structure
                 base.innerHTML = `
                     <slot name="left"></slot>
-                    <slot name="center"></slot>
+
+                    <slot name="center">
+                    </slot>
+
                     <slot name="right"></slot>
                 `;
 
@@ -137,13 +141,8 @@ class HNNavElement extends HTMLElement {
             }
 
             .mobile{
-                width: 100%;
+                max-width: 100%;
                 display: none;
-                padding-top: 10px;
-            }
-
-            .mobile ul li{
-                background-color:red;
             }
 
             .nav {
@@ -170,13 +169,14 @@ class HNNavElement extends HTMLElement {
                 .mobile {
                     display: none;
                     left: 0;
-                    width: 100%;
+                    max-width: 100%;
                 }
 
                 .visible{
                     display: flex;
                     z-index: 1;
-                    width: 100%;
+                    max-width: 100%;
+                    padding:10px;
                 }
 
                 ::slotted(ul){

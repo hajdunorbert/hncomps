@@ -5,11 +5,19 @@ const components = [
     "hn-card",
     "hn-list",
     "hn-row",
-    "hn-nav"
+    "hn-nav",
+    "hn-form"
 ];
 
 const attributes = [
-    "hn-palette"
+    "hn-palette",
+    "hn-validate"
+];
+
+const styles = [
+    "border",
+    "rounded",
+    "shadow"
 ];
 
 components.forEach(e => {
@@ -28,6 +36,17 @@ attributes.forEach(e => {
     if(comp.length > 0){
         loadScript(`${path}${e}.js`, () => {
             console.log(`${e} was loaded successfully.`);
+        });
+    }
+});
+
+styles.forEach(e => {
+    const comp          = document.querySelectorAll(`[${e}]`);
+    const scriptExists  = document.querySelector(`script[src="${path}hn-style.js"]`);
+
+    if(comp.length > 0 && !scriptExists){
+        loadScript(`${path}hn-style.js`, () => {
+            console.log(`hn-style was loaded successfully.`);
         });
     }
 });

@@ -22,17 +22,13 @@ class HNCardElement extends HTMLElement {
       style.textContent = `
         :host {
             --card-width: 200px;
-            display: block;
+            display: inline-block;
             width: var(--card-width);
-            margin: 10px;
-            ${this.hasAttribute('shadow') ? 'box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);' : 'none'}
-            ${this.hasAttribute('text-centered') ? 'text-align:center' : ''}
+            max-width: 100%;
         }
 
         .body {
             padding: 20px;
-            ${this.hasAttribute('border') ? 'border: 1px solid #ccc;' : 'none'}
-            ${this.hasAttribute('rounded') ? 'border-radius: 0 0 5px 5px' : 'none'}
         }
 
         .title {
@@ -44,7 +40,6 @@ class HNCardElement extends HTMLElement {
             width: 100%;
             height: auto;
             display: block;
-            ${this.hasAttribute('rounded') ? 'border-radius: 5px 5px 0 0' : 'none'}
         }
         `;
   
@@ -53,16 +48,7 @@ class HNCardElement extends HTMLElement {
       this.shadowRoot.appendChild(base);
   
     }
-  
-    static get observedAttributes() {
-      return ['width'];
-    }
-  
-    attributeChangedCallback(name, oldValue, newValue) {
-        if (name === 'width') {
-            this.style.setProperty('--card-width', `${newValue}px`);
-        }
-    }
+    
 }
   
 customElements.define('hn-card', HNCardElement);

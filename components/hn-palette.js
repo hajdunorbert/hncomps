@@ -4,7 +4,7 @@ elementsWithPalette.forEach(function (element) {
     const paletteColor = element.getAttribute('hn-palette');
 
     // Generate a unique class or ID
-     const uniqueClass = `hn-palette-${Math.random().toString(36).substring(7)}`;
+    const uniqueClass = `hn-palette-${Math.random().toString(36).substring(7)}`;
 
     element.classList.add(uniqueClass);
 
