@@ -33,3 +33,7 @@ The `<hn-button>` element supports the following attributes for customization:
 `shadow`: Apply a box shadow to the button.
 
 `rounded`: Add rounded corners to the button.
+
+## Acknowledgments
+
+The `HNCard` component is part of the `HNComps Library`, developed by `Hajdu Norbert`. Contributions and issues can be reported on the `GitHub repository`.

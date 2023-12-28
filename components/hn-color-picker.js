@@ -54,6 +54,7 @@ class HNColorPickerElement extends HTMLElement {
                 align-items:center;
                 padding: 5px 10px;
                 border-radius: 10px;
+                cursor: pointer;
             }
             .colorPickerContainer{
                 width: 100%;
@@ -74,6 +75,9 @@ class HNColorPickerElement extends HTMLElement {
         const inputElement = this.shadowRoot.querySelector('input');
         inputElement.addEventListener('input', this.changeColor.bind(this));
 
+        // Add click event listener to the text container
+        const textContainer = this.shadowRoot.querySelector('.textContainer');
+        textContainer.addEventListener('click', this.copyValueToClipboard.bind(this));
     }
 
     changeColor(event) {
@@ -84,6 +88,29 @@ class HNColorPickerElement extends HTMLElement {
 
          // Set the host element's value property
          this.setAttribute("value", this.color);
+    }
+
+    copyValueToClipboard() {
+        const textContainer = this.shadowRoot.querySelector('.textContainer');
+        const textToCopy = textContainer.textContent;
+
+        // Create a temporary textarea to copy the text
+        const tempTextarea = document.createElement('textarea');
+        tempTextarea.value = textToCopy;
+        document.body.appendChild(tempTextarea);
+
+        // Select the text in the textarea and copy it to the clipboard
+        tempTextarea.select();
+        document.execCommand('copy');
+
+        // Remove the temporary textarea
+        document.body.removeChild(tempTextarea);
+
+        // Optionally, you can provide visual feedback to the user (e.g., change the text or add a tooltip)
+        textContainer.textContent = 'Copied!';
+        setTimeout(() => {
+            textContainer.textContent = this.color;
+        }, 1000);
     }
 }
   

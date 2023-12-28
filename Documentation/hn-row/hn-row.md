@@ -66,3 +66,7 @@ Customize column sizes using the size attribute within each `<hn-col>` element.
   </hn-col>
 </hn-row>
 ```
+
+## Acknowledgments
+
+The `HNCard` component is part of the `HNComps Library`, developed by `Hajdu Norbert`. Contributions and issues can be reported on the `GitHub repository`.

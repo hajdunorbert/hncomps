@@ -47,3 +47,7 @@ The <hn-card> element supports the following attributes for customization:
 `rounded`: Add rounded corners to the card.
 
 You can adjust these attributes to fit the visual style and layout requirements of your project.
+
+## Acknowledgments
+
+The `HNCard` component is part of the `HNComps Library`, developed by `Hajdu Norbert`. Contributions and issues can be reported on the `GitHub repository`.

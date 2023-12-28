@@ -56,3 +56,7 @@ You can also use custom color values by specifying a hexadecimal color code:
 ```html
 <div hn-palette="#ff5733">Custom Color</div>
 ```
+
+## Acknowledgments
+
+The `HNCard` component is part of the `HNComps Library`, developed by `Hajdu Norbert`. Contributions and issues can be reported on the `GitHub repository`.

@@ -90,3 +90,7 @@ Show items in a timeline, with a left border for each item.
 Ensure that the `items` attribute is provided in a valid JSON format.
 
 Feel free to customize the HNList component to fit your project's specific needs and styling preferences.
+
+## Acknowledgments
+
+The `HNCard` component is part of the `HNComps Library`, developed by `Hajdu Norbert`. Contributions and issues can be reported on the `GitHub repository`.
