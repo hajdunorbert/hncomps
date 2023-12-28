@@ -1,5 +1,18 @@
 # Changelog
 
+## Version 0.0.5
+
+### Added
+
+- **HNSignature Component:**
+
+#### Usage
+
+```html
+<!-- Example Usage -->
+<div hn-signature></div>
+```
+
 ## Version 0.0.4
 
 ### Added
