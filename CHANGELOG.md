@@ -1,5 +1,27 @@
 # Changelog
 
+## Version 0.0.3
+
+### Added
+
+- **HNStyle Component:**
+  - Added the ability for users to easily make a dropdown menu.
+
+#### Usage
+
+```html
+<ul>
+  <li dropdown>
+    <button>This is a Dropdown Menu</button>
+    <div dropdown-content>
+      <a dropdown-item href="#">Dropdown Item 1</a>
+      <a dropdown-item href="#">Dropdown Item 2</a>
+      <a dropdown-item href="#">Dropdown Item 3</a>
+    </div>
+  </li>
+</ul>
+```
+
 ## Version 0.0.2
 
 ### Added

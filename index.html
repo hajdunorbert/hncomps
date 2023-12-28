@@ -36,6 +36,10 @@
       font-size: 2rem;
     }
 
+.dropdown-item{
+  background-color: red;
+}
+
   </style>
 
 </head>
@@ -46,7 +50,16 @@
     <div class="logo" slot="left">Your Logo</div>
 
     <ul slot="center" class="nav-links">
-      <li><a href="#"><hn-button hn-palette="blue" hover rounded>Home</hn-button></li></a>
+      <li dropdown>
+        <hn-button hn-palette="green" hover rounded>Components</hn-button>
+          <div dropdown-content>
+            <a dropdown-item hn-palette="#4k12k2" hover href="#">hn-button</a>
+            <a dropdown-item hn-palette="#4k12k2" hover href="#">hn-card</a>
+            <a dropdown-item hn-palette="#4k12k2" hover href="#">hn-color-picker</a>
+            <a dropdown-item hn-palette="#4k12k2" hover href="#">hn-form</a>
+            <a dropdown-item hn-palette="#4k12k2" hover href="#">hn-list</a>
+          </div>
+        </li>
       <li><a href="#"><hn-button hn-palette="blue" hover rounded>About</hn-button></li></a>
       <li><a href="#"><hn-button hn-palette="blue" hover rounded>Services</hn-button></li></a>
       <li><a href="#"><hn-button hn-palette="blue" hover rounded>Contact</hn-button></li></a>
@@ -61,6 +74,19 @@
     <hn-color-picker border rounded shadow>
 
     </hn-color-picker>
+  
+    <ul>
+
+      <li dropdown>
+        <button>This is a Dropdown Menu</button>
+        <div dropdown-content>
+          <a dropdown-item href="#">Dropdown Item 1</a>
+          <a dropdown-item href="#">Dropdown Item 2</a>
+          <a dropdown-item href="#">Dropdown Item 3</a>
+        </div>
+      </li>
+
+    </ul>
 
   </main>
 

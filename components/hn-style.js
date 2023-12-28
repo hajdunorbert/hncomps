@@ -23,7 +23,35 @@ const HNStyleAttributes = [
         attr: "full-width",
         className: `hn-style-full-width`,
         style: "width: 100%;"
-    }
+    },
+    {
+        attr: "dropdown",
+        className: `hn-style-dropdown`,
+        style: "display: inline-block;",
+        styleHover: `
+            .hn-style-dropdown-content {
+                display: block;
+            }
+        `
+    },
+    {
+        attr: "dropdown-content",
+        className: `hn-style-dropdown-content`,
+        style: `display: none;
+                position: absolute;
+                background-color: transparent;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+                border-radius: 10px;`
+    },
+    {
+        attr: "dropdown-item",
+        className: `hn-style-dropdown-item`,
+        style: `padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                border-radius: 10px;`
+    },
 ];
 
 const elementsWithStyle = [];
@@ -38,6 +66,10 @@ function createStyleWithClassname(){
     HNStyleAttributes.forEach(e => {
 
         styleText += `.${e.className} { ${e.style} }`;
+
+        if(e.styleHover !== undefined){
+            styleText += `.${e.className}:hover ${e.styleHover}`;
+        }
         
     });
 
