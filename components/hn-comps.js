@@ -12,7 +12,8 @@ const components = [
 const attributes = [
     "hn-palette",
     "hn-validate",
-    "hn-tooltip"
+    "hn-tooltip",
+    "hn-signature"
 ];
 
 const styles = [
