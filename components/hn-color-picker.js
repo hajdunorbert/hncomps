@@ -16,8 +16,10 @@ class HNColorPickerElement extends HTMLElement {
                 </div>
             </div>
             
-            <div class="colorPicker" value="${this.color}">
-                <input type="color" value="${this.color}">
+            <div class="colorPickerContainer" value="${this.color}">
+                <div>
+                    <input type="color" value="${this.color}">
+                </div>
             </div>
         `;
 
@@ -39,7 +41,6 @@ class HNColorPickerElement extends HTMLElement {
                 border: 2px solid rgb(73, 68, 68);
                 width: 100%;
                 height: 100%;
-                margin-bottom: 5px;
                 background-color: ${this.color};
                 display:flex;
                 justify-content:center;
@@ -53,6 +54,15 @@ class HNColorPickerElement extends HTMLElement {
                 align-items:center;
                 padding: 5px;
                 border-radius: 10px;
+            }
+            .colorPickerContainer{
+                width: 100%;
+            }
+            .colorPickerContainer div{
+                padding: 5px;
+            }
+            .colorPickerContainer input{
+                width: 100%;
             }
         `;
 
