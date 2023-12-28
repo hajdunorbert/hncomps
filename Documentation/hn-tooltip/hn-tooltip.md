@@ -26,6 +26,8 @@ Additionally, you can use `hn-tooltip-top`, `hn-tooltip-bottom`, `hn-tooltip-rig
 
 ## Component Structure
 
+Note: The structure will be generated dynamically
+
 ### HTML Structure
 
 ```html
