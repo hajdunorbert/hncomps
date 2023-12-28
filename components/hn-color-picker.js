@@ -52,7 +52,7 @@ class HNColorPickerElement extends HTMLElement {
                 display:flex;
                 justify-content:center;
                 align-items:center;
-                padding: 5px;
+                padding: 5px 10px;
                 border-radius: 10px;
             }
             .colorPickerContainer{
