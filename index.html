@@ -31,7 +31,7 @@
     }
 
     hn-color-picker{
-      width: 600px;
+      width: 100%;
       height: 500px;
       font-size: 2rem;
     }
@@ -74,19 +74,15 @@
     <hn-color-picker border rounded shadow>
 
     </hn-color-picker>
-  
-    <ul>
 
-      <li dropdown>
-        <button>This is a Dropdown Menu</button>
-        <div dropdown-content>
-          <a dropdown-item href="#">Dropdown Item 1</a>
-          <a dropdown-item href="#">Dropdown Item 2</a>
-          <a dropdown-item href="#">Dropdown Item 3</a>
-        </div>
-      </li>
-
-    </ul>
+    <div dropdown>
+      <hn-button hn-palette="red" hover rounded border shadow>This is a Dropdown Menu</hn-button>
+      <div dropdown-content>
+        <a hn-palette="teal" hover dropdown-item href="#">Dropdown Item 1</a>
+        <a dropdown-item href="#">Dropdown Item 2</a>
+        <a dropdown-item href="#">Dropdown Item 3</a>
+      </div>
+    </div>
 
   </main>
 
