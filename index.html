@@ -28,6 +28,9 @@
     main{
       padding: 20px;
       
+      display:flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     hn-color-picker{
@@ -35,10 +38,6 @@
       height: 500px;
       font-size: 2rem;
     }
-
-.dropdown-item{
-  background-color: red;
-}
 
   </style>
 
@@ -71,14 +70,14 @@
 
   <main>
 
-    <hn-color-picker border rounded shadow>
+    <hn-color-picker>
 
     </hn-color-picker>
 
-    <div dropdown>
+    <div class="test" hn-tooltip="This is a tooltip, and it's a bit long.." hn-tooltip-right>
       <hn-button hn-palette="red" hover rounded border shadow>This is a Dropdown Menu</hn-button>
       <div dropdown-content>
-        <a hn-palette="teal" hover dropdown-item href="#">Dropdown Item 1</a>
+        <a dropdown-item hn-palette="teal" hover href="#">Dropdown Item 1</a>
         <a dropdown-item href="#">Dropdown Item 2</a>
         <a dropdown-item href="#">Dropdown Item 3</a>
       </div>

@@ -106,7 +106,6 @@ class HNColorPickerElement extends HTMLElement {
         // Remove the temporary textarea
         document.body.removeChild(tempTextarea);
 
-        // Optionally, you can provide visual feedback to the user (e.g., change the text or add a tooltip)
         textContainer.textContent = 'Copied!';
         setTimeout(() => {
             textContainer.textContent = this.color;

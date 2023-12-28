@@ -11,7 +11,8 @@ const components = [
 
 const attributes = [
     "hn-palette",
-    "hn-validate"
+    "hn-validate",
+    "hn-tooltip"
 ];
 
 const styles = [

@@ -1,5 +1,19 @@
 # Changelog
 
+## Version 0.0.4
+
+### Added
+
+- **HNTooltip Component:**
+
+#### Usage
+
+```html
+<!-- Example Usage -->
+<button hn-tooltip="Click me to submit the form" hn-tooltip-top>Submit</button>
+<input hn-tooltip="Enter your username" placeholder="Username" />
+```
+
 ## Version 0.0.3
 
 ### Added
