@@ -8,46 +8,16 @@ With `hn-style`, you can easily enhance the appearance of your components by spe
 
 Include the `hn-comps.js` JavaScript file in your project. Since the `HNComps` are dynamically loading the script based on the components used.
 
-## Configuration
-
-Modify a configuration array called `HNStyleAttributes` to specify custom styles. Each configuration object in the array should include the following properties:
-
-`attr`: The attribute that triggers the application of the style.
-`className`: The class name to be added to elements with the specified attribute.
-`style`: The CSS style rules to be applied when the class is added.
-
-```javascript
-const HNStyleAttributes = [
-  {
-    attr: "rounded",
-    className: "hn-style-rounded",
-    style: "border-radius: 5px;",
-  },
-  {
-    attr: "shadow",
-    className: "hn-style-shadow",
-    style: "box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);",
-  },
-  {
-    attr: "border",
-    className: "hn-style-border",
-    style: "border: 1px solid #ccc;",
-  },
-  {
-    attr: "text-centered",
-    className: "hn-style-text-centered",
-    style: "text-align:center;",
-  },
-];
-```
-
 ## Attributes
 
 `full-width` - Gives an element `100% width`
 `rounded` - Gives an element `Rounded Corners`
-`shadow`  - Gives an element `Shadow`
-`border`  - Gives an element `Border`
+`shadow` - Gives an element `Shadow`
+`border` - Gives an element `Border`
 `text-centered` - Makes the `Text Centered`
+`dropdown` - Applies styles to make an element a `dropdown container`.
+`dropdown-content` - Styles for `dropdown content`.
+`dropdown-item` - Styles for each `item in the dropdown`.
 
 ## Usage
 
@@ -67,6 +37,18 @@ Apply custom styles to HTML elements by adding the corresponding attributes spec
 
 <!-- Apply text-centered style -->
 <span text-centered>This text is centered</span>
+
+<!-- Apply dropdown style -->
+<ul>
+  <li dropdown>
+    <button>This is a Dropdown Menu</button>
+    <div dropdown-content>
+      <a dropdown-item href="#">Dropdown Item 1</a>
+      <a dropdown-item href="#">Dropdown Item 2</a>
+      <a dropdown-item href="#">Dropdown Item 3</a>
+    </div>
+  </li>
+</ul>
 ```
 
 ## Acknowledgments
