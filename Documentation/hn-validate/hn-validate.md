@@ -40,3 +40,7 @@ The error messages will be displayed as a list within the corresponding label.<b
 The form submission button will be disabled if there are validation errors.
 
 Adjust the rules and styling as needed for your project.
+
+## Acknowledgments
+
+The `HNValidate` component is part of the `HNComps Library`, developed by `Hajdu Norbert`. Feel free to contribute or report issues on the `GitHub repository`.

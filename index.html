@@ -30,6 +30,12 @@
       
     }
 
+    hn-color-picker{
+      width: 600px;
+      height: 500px;
+      font-size: 2rem;
+    }
+
   </style>
 
 </head>
@@ -52,14 +58,9 @@
 
   <main>
 
-    <form name="login">
+    <hn-color-picker border rounded shadow>
 
-      <input placeholder="Username" name="username" hn-validate="required min:8 max:12">
-      <label for="username"></label>
-
-      <button type="submit" disabled>Submit</button>
-
-    </form>
+    </hn-color-picker>
 
   </main>
 

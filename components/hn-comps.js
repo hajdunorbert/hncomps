@@ -5,7 +5,8 @@ const components = [
     "hn-card",
     "hn-list",
     "hn-row",
-    "hn-nav"
+    "hn-nav",
+    "hn-color-picker"
 ];
 
 const attributes = [
