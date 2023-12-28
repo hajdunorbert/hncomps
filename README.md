@@ -13,13 +13,13 @@ To get started, include the `hn-comps.js` in to your project:
 
 ## Components
 
-`HNButton`: Versatile button.
-`HNCard`: Customizable card element for modern web interfaces.
-`HNColorPicker`: User-friendly color picker with real-time updates.
-`HNList`: Versatile list element with various view options.
-`HNNav`: Versatile navigation bar element.
-`HNPalette`: Lightweight JavaScript library for adding color palettes to web components.
-`HNRow`: Flexible row layout element.
+`HNButton`: Versatile button.<br>
+`HNCard`: Customizable card element for modern web interfaces.<br>
+`HNColorPicker`: User-friendly color picker with real-time updates.<br>
+`HNList`: Versatile list element with various view options.<br>
+`HNNav`: Versatile navigation bar element.<br>
+`HNPalette`: Lightweight JavaScript library for adding color palettes to web components.<br>
+`HNRow`: Flexible row layout element.<br>
 
 For detailed usage and customization of each component, refer to the respective documentation in the `Documentation` directory.
 
